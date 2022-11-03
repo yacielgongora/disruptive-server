@@ -26,7 +26,8 @@ GET /coins
 
 Parámetros:
 
--   Response:
+Response:
+
     [
     {
     "symbol": "TRXBNB",
@@ -55,8 +56,11 @@ Parámetros:
     ]
     ***
     Crear una order de tipo LIMIT
+
     POST /coins/order
+
     Parámetros:
+
     {
     "side": "BUY",
     "type": "LIMIT",
@@ -90,11 +94,17 @@ Parámetros:
     }
     ***
     Obtener información de una cuenta
+
     GET /account
+
     Parámetros:
+
     api_key: Llave de acceso a la testnet api
+
     secret_key: Llave secreta de acceso a testnet api
+
     Response:
+    
     {
     "makerCommission": 0,
     "takerCommission": 0,
