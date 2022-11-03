@@ -1,0 +1,16 @@
+GET http://localhost/coins HTTP/1.1
+###
+
+GET http://localhost/account?api_key=WDXeuRcaHDgPW3vwJ3TMlHEfnQJQx01wn4Vggz8k8kZnGQKEsQkFWHulTrsVVBC1&secret_key=KR9u78CmQs33fH4YU795GrGpxKnFMWBNM9YiT8xYfFmYfIZaLVptoPuUIDUhzN49 HTTP/1.1
+####
+
+POST http://localhost/coins/order HTTP/1.1
+Content-Type: application/json
+
+{
+  "side": "BUY",
+  "type": "LIMIT",
+  "timeInForce": "GTC",
+  "quantity": 1000
+}
+#####
