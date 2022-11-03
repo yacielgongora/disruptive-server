@@ -1,7 +1,5 @@
 require("dotenv").config();
 const { Spot } = require("@binance/connector");
-const crypto = require("crypto");
-const qs = require("qs");
 const Utils = {
     respond: async function (req, res, fn) {
         try {
@@ -27,11 +25,6 @@ const Utils = {
     },
     client: function (api_key, secret_key) {
         return new Spot(api_key, secret_key, { baseURL: process.env.BINANCE_URL });
-    },
-    signPayload: function (payload) {
-        const data = { ...payload, timestamp: Date.now() };
-        const signature = crypto.createHmac("sha256", process.env.SECRET_KEY).update(qs.stringify(data)).digest("hex");
-        return { ...data, signature };
     }
 };
 module.exports = Utils;

@@ -19,7 +19,9 @@ la lógica de los EP) y rutas(carpeta routes donde se encuentran las rutas de lo
 Las variables de entorno usadas estan guardadas en el fichero .env.example copie su contenido y úselo en su fichero .env
 
 # Documentación
+Puede usar el siquiente link /documentation para acceder  web de la documentación
 
+Resumen
 Obtener las 10 monedas que más pérdidas de valor tuvieron en las últimas 24 horas.
 
 GET /coins
