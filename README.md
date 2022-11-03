@@ -2,10 +2,11 @@
 
 El siguiente proyecto es una prueba técnica
 
-#Ejecutar
+# Ejecutar
+
 npm run dev:start
 
-#Test
+# Test
 npm run test
 
 
