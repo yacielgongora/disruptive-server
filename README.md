@@ -20,7 +20,7 @@ Las variables de entorno usadas estan guardadas en el fichero .env.example copie
 
 # Documentación
 
-Obtener las 10 monedas que más pérdidas de valor tuvieron en las últimas 24 horas.
+Obtener las 10 monedas que más pérdidas de valor tuvieron en las últimas 24 horas. \n
 GET /coins
 Parámetros:
 
